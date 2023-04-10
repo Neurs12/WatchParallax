@@ -37,5 +37,5 @@ window.addEventListener("load", (_) => {
         animateScroll();
     }
 
-    scrollTo(parallax, 0, 1250);
+    scrollTo(parallax, 0, 5000);
 });
