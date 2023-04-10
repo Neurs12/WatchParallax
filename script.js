@@ -1,5 +1,6 @@
 let parallax = document.getElementById("scroll-parallax");
 var layers = [];
+let scenceView = document.getElementById("scence-view");
 
 parallax.scrollTo(0, parallax.scrollHeight);
 
@@ -13,7 +14,14 @@ window.addEventListener("load", (_) => {
         for (var i = 0; i < 9; i++) {
             layers[i].style.top = `${offset * (i+1) / 30}px`;
         }
-    })
+        if (offset == 0) {
+            scenceView.classList.add("flani-in");
+            scenceView.classList.remove("flani-out");
+        } else {
+            scenceView.classList.add("flani-out");
+            scenceView.classList.remove("flani-in");
+        }
+    });
 
     function scrollTo(element, to, duration) {
         Math.easeInOutQuad = function(t, b, c, d) {

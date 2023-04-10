@@ -33,5 +33,63 @@ img {
   left: 0;
   right: 0;
   height: 100%;
-  z-index: 2;
+  z-index: 0;
+}
+
+.view-button {
+  background: #7b241b;
+  border: 1px solid #7b241b;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  font-family: roboto,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  z-index: 100;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes floatInAnimation {
+  0%   {opacity: 0; top: 30%}
+  100% {opacity: 1; top: 20%}
+}
+
+@keyframes floatOutAnimation {
+  0%   {opacity: 1; top: 20%}
+  100% {opacity: 0; top: 30%}
+}
+
+.pre-flani {
+  opacity: 0;
+}
+
+.flani-in {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-name: floatInAnimation;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.flani-out {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-name: floatOutAnimation;
+  animation-duration: 1s;
+  position: relative;
 }
