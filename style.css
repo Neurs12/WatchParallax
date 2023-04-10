@@ -37,41 +37,39 @@ img {
 }
 
 .view-button {
-  background: #7b241b;
-  border: 1px solid #7b241b;
-  border-radius: 6px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  position: absolute;
   font-family: roboto,sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
-  min-height: 40px;
-  outline: 0;
-  padding: 12px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
+  position: absolute;
   z-index: 100;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
 }
 
 @keyframes floatInAnimation {
-  0%   {opacity: 0; top: 30%}
-  100% {opacity: 1; top: 20%}
+  0%   {opacity: 0}
+  100% {opacity: 1}
 }
 
 @keyframes floatOutAnimation {
-  0%   {opacity: 1; top: 20%}
-  100% {opacity: 0; top: 30%}
+  0%   {opacity: 1}
+  100% {opacity: 0}
 }
 
 .pre-flani {
