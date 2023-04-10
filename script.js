@@ -1,7 +1,9 @@
-window.addEventListener("load", (_) => {
-    let parallax = document.getElementById("scroll-parallax");
+let parallax = document.getElementById("scroll-parallax");
+var layers = [];
 
-    var layers = [];
+parallax.scrollTo(0, parallax.scrollHeight);
+
+window.addEventListener("load", (_) => {
     for (var i = 0; i < 9; i++) {
         layers.push(document.getElementById(`l${i}`));
     }
@@ -12,8 +14,6 @@ window.addEventListener("load", (_) => {
             layers[i].style.top = `${offset * (i+1) / 30}px`;
         }
     })
-
-    parallax.scrollTo(0, parallax.scrollHeight);
 
     function scrollTo(element, to, duration) {
         Math.easeInOutQuad = function(t, b, c, d) {
