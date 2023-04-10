@@ -39,7 +39,9 @@ img {
 .view-button {
   font-family: roboto,sans-serif;
   position: absolute;
-  z-index: 100;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
 }
 
 a:link {
